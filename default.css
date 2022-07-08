@@ -10,12 +10,14 @@
     --themeDotBorder: #24292e;
 
     --previewBg: rgb(251, 249, 243, 0.8);
-    --previewShadow: #f0ead6;
+    --previewShadow: #708090;
 
+    --inputFieldColor: #fff;
+    --buttonColor: #708090;
 
-    --buttonColor: black;
+    --navBarColor: #708090;
 
-
+    --skillList: #fff;
 }
 
 
@@ -120,6 +122,7 @@ h6 {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
+    margin: 0 0 50px 0;
 
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -142,7 +145,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--mainColor);
+    background-color: var(--navBarColor);
 }
 
 #navigation a {
@@ -330,6 +333,10 @@ h6 {
     background-color: var(--previewShadow);
 }
 
+#skills ul li{
+    color: var(--skillList);
+}
+
 .social-links {
     display: grid;
     align-content: center;
@@ -405,7 +412,7 @@ h6 {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--secondaryColor);
+    background-color: var(--inputFieldColor);
     border-radius: 5px;
     border: 1px solid var(--borderColor);
     font-size: 14px;

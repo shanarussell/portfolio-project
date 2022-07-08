@@ -1,6 +1,6 @@
 :root {
-    --mainColor: #606B56;
-    --secondaryColor: #515a48;
+    --mainColor: #68BB59;
+    --secondaryColor: #256F15;
 
     --borderColor: #161914;
 
@@ -12,8 +12,14 @@
     --previewBg: rgb(81, 90, 72, 0.8);
     --previewShadow: #2a2f25;
 
+    --inputFieldColor: #ACDF87;
+    --buttonColor: #2a2f25;
 
-    --buttonColor: #669966;
+    --navBarColor: #ACDF87;
+
+  
+    
+        --skillList: #fff;
 
 
 }
