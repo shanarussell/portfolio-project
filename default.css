@@ -7,14 +7,18 @@
     --mainText: black;
     --secondaryText: #4b5156;
 
-    --themeDotBorder: #24292e;
+    /* --themeDotBorder: #24292e; */
 
-    --previewBg: rgb(251, 249, 243, 0.8);
-    --previewShadow: #708090;
+    /* --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #708090; */
 
     --navBarColor: #708090;
 
-    --skillList: #fff;
+    --gradient1: #FEC02F;
+    --gradient2: #FEC02F;
+
+    --navigationColor: #eaeaea;
+
 }
 
 /* ---misc styling--- */
@@ -24,6 +28,7 @@ body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: var(--mainColor);
 }
 
 body * {
@@ -56,15 +61,17 @@ textarea {
 
 a {
     text-decoration: none;
-    color: #17a2b8;
+    /* color: #17a2b8; */
+    color: var(--secondaryText);
 }
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 50px;
 }
 
 h2 {
@@ -90,7 +97,6 @@ h6 {
 
 .s1 {
     background-color: var(--mainColor);
-    border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
 
@@ -112,10 +118,9 @@ h6 {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
         'greeting-area color-theme-area';
-    text-align: center;
-    align-content: center;
     min-height: 10em;
     padding: 30px;
+    align-items: center;
 }
 
 #greeting-area{
@@ -127,7 +132,7 @@ h6 {
     grid-area: color-theme-area;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+ 
 }
 
 #color-theme-heading{
@@ -162,7 +167,7 @@ h6 {
 }
 
 #green-mode {
-    background-color: #78866b;
+    background-color: #9CF965;
 }
 
 #purple-mode {
@@ -179,7 +184,6 @@ h6 {
     border-radius: 5px 5px 0 0;
     margin: 0 0 50px 0;
     height:fit-content;
-    padding-bottom: 200px;
 
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -207,7 +211,11 @@ h6 {
 }
 
 #navigation a {
-    color: var(--mainText);
+    color: var(--navigationColor);
+}
+
+#navigation a:hover{
+    color: var(--gradient1);
 }
 
 
@@ -257,6 +265,23 @@ h6 {
     grid-area: left-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-right: 1px solid gray;
+    line-height: 3;
+}
+.sidebar-links-wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#sidebar-links{
+    background-image: linear-gradient(var(--gradient1), var(--gradient2));
+    background-size: 0 80%;
+    background-repeat: no-repeat;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#sidebar-links:hover{
+    background-size: 100% 80%;
 }
 
 #profile_pic {
@@ -292,8 +317,6 @@ h6 {
 }
 
 
-
-
 .right-column {
     grid-area: right-column;
     display: grid;
@@ -304,84 +327,7 @@ h6 {
 }
 
 
-#preview-shadow {
-    background-color: var(--previewShadow);
-    max-width: 300px;
-    height: 180px;
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-#preview {
-    width: 300px;
-    border: 1.5px solid #17a2b8;
-    background-color: var(--previewBg);
-    padding: 15px;
-    position: relative;
-}
-
-.corner {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: 1.5px solid #17a2b8;
-    background-color: #fff;
-    position: absolute;
-}
-
-#corner-tl {
-    top: -5px;
-    left: -5px
-}
-
-#corner-tr {
-    top: -5px;
-    right: -5px
-}
-
-
-#corner-br {
-    bottom: -5px;
-    right: -5px
-}
-
-
-#corner-bl {
-    bottom: -5px;
-    left: -5px
-}
-
-.about-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-bottom: 50px;
-    padding-top: 50px;
-    gap: 100px;
-}
-
-
-#skills {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--previewShadow);
-}
-
-#skills ul li{
-    color: var(--skillList);
-}
-
-.social-links {
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
-
-#social_img {
-    width: 100%;
-}
-
-
-/* --- responsive code --- */
+/* --- media queries --- */
 
 @media screen and (max-width: 1200px) {
     .main-container {
@@ -398,21 +344,18 @@ h6 {
     }
 
     .right-column {
+        
         justify-content: center;
     }
     #greeting-area{
+        
         text-align: center;
     }
 
 }
 
 @media screen and (max-width: 400px) {
-    #preview-shadow {
-        max-width: 280px;
-        height: 180px;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
+ 
 
         #greeting-area {
             text-align: center;

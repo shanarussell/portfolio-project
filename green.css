@@ -1,11 +1,11 @@
 :root {
-    --mainColor: #68BB59;
-    --secondaryColor: #256F15;
+    --mainColor: black;
+    --secondaryColor: #9CF965;
 
     --borderColor: #161914;
 
-    --mainText: #fff;
-    --secondaryText: #eeeeee;
+    --mainText: #9CF965;
+    --secondaryText: #256F15;
 
     --themeDotBorder: #FFF;
 
@@ -15,11 +15,14 @@
     --inputFieldColor: #ACDF87;
     --buttonColor: #2a2f25;
 
-    --navBarColor: #ACDF87;
+    --navBarColor: #9CF965;
 
-  
-    
-        --skillList: #fff;
+    --skillList: #fff;
+
+    --gradient1: black;
+    --gradient2: black;
+
+    --navigationColor: #256F15;
 
 
 }

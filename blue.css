@@ -1,8 +1,8 @@
 :root {
-    --mainColor: #15202B;
-    --secondaryColor: #3b4d5e;
+    --mainColor: #0A192F;
+    --secondaryColor: #8892B0;
 
-    --borderColor: #164D56;
+    --borderColor: #307A77;
 
     --mainText: #fff;
     --secondaryText: #eeeeee;
@@ -15,7 +15,12 @@
     --inputFieldColor: #708090;
     --buttonColor: #37546f;
 
-    --navBarColor: #708090;
+    --navBarColor: #CCD6F7;
     
-        --skillList: #fff;
+    --skillList: #fff;
+
+    --gradient1: #307A77;
+    --gradient2: #307A77;
+
+    --navigationColor: #0a192f;
 }
