@@ -46,3 +46,24 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+//to fill right side of window
+function aboutMeSection(){
+	let aboutMeID = document.getElementById("right-html-wrapper");
+	aboutMeID.innerHTML ="<h2>About Me</h2>";
+}
+
+function skillsSection(){
+	let skillsID = document.getElementById("right-html-wrapper");
+	skillsID.innerHTML ="<h2>Skills</h2>";
+}
+
+function portfolioSection(){
+	let portfolioID = document.getElementById("right-html-wrapper");
+	portfolioID.innerHTML ="<h2>Portfolio</h2>";
+}
+
+function contactSection(){
+	let contactID = document.getElementById("right-html-wrapper");
+	contactID.innerHTML ="<h2>Contact Me</h2>";
+}
