@@ -1,4 +1,5 @@
 
+
 //saves the current them in local storage
 let theme = localStorage.getItem('theme')
 
@@ -29,7 +30,7 @@ for (var i=0; themeDots.length > i; i++){
 //puts current theme in local storage
 function setTheme(mode){
 	if(mode == 'light'){
-		document.getElementById('theme-style').href = 'default.css'
+		document.getElementById('theme-style').href = 'light.css'
 	}
 
 	if(mode == 'blue'){
@@ -48,22 +49,44 @@ function setTheme(mode){
 }
 
 //to fill right side of window
+window.onload = function initialHomeSection(){
+	let initialHomeID = document.getElementById("right-html-wrapper");
+	initialHomeID.innerHTML=initialHomeText;
+}
+
+function homeSection(){
+	let homeID = document.getElementById("right-html-wrapper");
+	homeID.innerHTML=initialHomeText;
+}
+
 function aboutMeSection(){
 	let aboutMeID = document.getElementById("right-html-wrapper");
-	aboutMeID.innerHTML ="<h2>About Me</h2>";
+	aboutMeID.innerHTML =aboutMeText;
 }
 
 function skillsSection(){
 	let skillsID = document.getElementById("right-html-wrapper");
-	skillsID.innerHTML ="<h2>Skills</h2>";
+	skillsID.innerHTML = skillsText;
 }
 
 function portfolioSection(){
 	let portfolioID = document.getElementById("right-html-wrapper");
-	portfolioID.innerHTML ="<h2>Portfolio</h2>";
+	portfolioID.innerHTML = portfolioText;
 }
 
 function contactSection(){
 	let contactID = document.getElementById("right-html-wrapper");
-	contactID.innerHTML ="<h2>Contact Me</h2>";
+	contactID.innerHTML =contactText;
 }
+
+let initialHomeText='<h4>INITIAL home content goes here</h4>'
+
+let homeText='<h4>NEW home content goes here</h4>'
+
+let aboutMeText = "<h4>More about me</h4><p>I am a full-stack developer with previous experience spanning IT Support, Educational Technology Administration, and Graphic Design.</p><p>I am currently a member of Merit America's Java Development program. This is a 30-week intensive program focused on Full Stack Web Application Development, including hands-on coursework in Java Development, Client-Server Programming (SQL + Spring), and Frontend Development (Classic Web + React). I will complete this program in Septenber 2022.</p>";
+
+let skillsText= '<h4>TOP EXPERTISE</h4><p>Front end developer with working knowledge about back-end and database technologies and Languages: <a target="_blank" href="SHANA_RUSSELL_RESUME.pdf">Download Resume</a></p><div id="skills"><ul><li>Java</li><li>JavaScript</li><li>React</li><li>SQL</li><li>Postgres</li></ul><ul><li>Redux</li><li>Bootstrap</li><li>Spring Boot</li><li>Adobe CC</li><li>HTML/CSS</li></ul></div>';
+
+let portfolioText='<h4>Portfolio goes here</h4>';
+
+let contactText='<h4>Contact goes here</h4>'

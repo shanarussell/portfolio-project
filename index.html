@@ -12,21 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
         rel="stylesheet">
 
+  
+
     <link rel="stylesheet" type="text/css" href="default.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
     
 </head>
 
 <body>
-
-    <section class="s1">
+   
+    <section class="s1"> 
         <div class="main-container">
             <div class="top-area-wrapper">
-                <h1 id="greeting-area">&lt;&quot;Hello, World&quot;&gt; <br />I am Shana Russell</h1>
+                <h1 style="font-size: 50px" id="greeting-area">&lt;&quot;Hello, World&quot;&gt; <br />I am Shana Russell</h1>
 
                 <div id="color-theme-wrapper">
 
-                    <div id="color-theme-heading">Choose a Color Theme</div>
+                    <div id="color-theme-heading" style="font-size: 20px">Choose a Color Theme</div>
                 
                         <div id="color-circles-wrapper">
                             <div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -34,7 +36,7 @@
                             <div data-mode="green" id="green-mode" class="theme-dot"></div>
                             <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                         </div>
-                            <p id="settings-note">*Theme settings will be saved for your next vist</p>
+                            <p id="settings-note" style="font-size: 12px">*Theme settings will be saved for your next vist</p>
 
                         
 
@@ -65,28 +67,39 @@
                 <div class="left-column">
                     <div class="sidebar-links-wrapper">
                         <ul>
-                            <a href="#" onclick="aboutMeSection();"><li id="sidebar-links">&nbsp;About me</li></a>
-                            <a href="#" onclick="skillsSection();"><li id="sidebar-links">&nbsp;Skills</li></a>
-                            <a href="#" onclick="portfolioSection();"><li id="sidebar-links">&nbsp;Portfolio</li></a>
-                            <a href="#" onclick="contactSection();"><li id="sidebar-links">&nbsp;Contact</li></a>
+                            <a href="#" onclick="homeSection();">
+                                <li id="sidebar-links">&nbsp;Home</li>
+                            </a>
+                            <a href="#" onclick="aboutMeSection();">
+                                <li id="sidebar-links">&nbsp;About me</li>
+                            </a>
+                            <a href="#" onclick="skillsSection();">
+                                <li id="sidebar-links">&nbsp;Skills</li>
+                            </a>
+                            <a href="#" onclick="portfolioSection();">
+                                <li id="sidebar-links">&nbsp;Portfolio</li>
+                            </a>
+                            <a href="#" onclick="contactSection();">
+                                <li id="sidebar-links">&nbsp;Contact</li>
+                            </a>
                         </ul>
                     </div>
                 </div>
                     
-
-                <div class="right-column">
-                    <div id="right-html-wrapper"></div>
-                    
-                    
-                </div>
+            <div class="right-column">
+                <div id="right-html-wrapper"></div>
+                
+            
             </div>
+
         </div>
     </section>
 
 
 
 
-    <script type="text/javascript" src="script.js"></script>
+
+    <script defer src="script.js"></script>
 </body>
 
 </html>
